@@ -11,14 +11,14 @@
  
  #Contentwill display after the loop
  
- #inputs for shortcode  [didiplayer quantity="" mini=""] y will give mini player
+ #necessary inputs for shortcode  [didiplayer feedurl=""] mini="y" will give mini player--only plays first ep
  
  function didiplayer_function($atts) {
      
      $atts = shortcode_atts( array(
 			'feedurl' => '',
 			'quantity' => '10',
-			'imgsize' => '250',
+			'imgsize' => '200',
 			'imgclass' => 'alignleft',
 			'itunes' => '',
 			'google' => '',
@@ -77,7 +77,7 @@
                     #Image Div
                     $Content .= '<div class="dp_imgsum">';
                         #Episode image    
-                            $Content .= '<p class="dp_epimage"><img src="' . $feed->children('itunes', true)->image->attributes() . '" height="200px" width="200px" </p><br>';
+                            $Content .= '<p class="dp_epimage"><img src="' . $feed->children('itunes', true)->image->attributes() . '" height="'$imgsize'" width="'$imgsize'" </p><br>';
                     $Content .= '</div>';
     
                     #Episode summary

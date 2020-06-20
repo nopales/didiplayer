@@ -19,7 +19,6 @@
 			'feedurl' => '',
 			'quantity' => '10',
 			'imgsize' => '250',
-			'imgclass' => 'alignleft',
 			'itunes' => 'https://podcasts.apple.com/us/podcast/the-chronicles-of-didi/id1518437334',
 			'google' => '',
 			'soundcloud' => '',
@@ -33,7 +32,6 @@
     $soundcloud = $atts['soundcloud'];
     $quantity = $atts['quantity'];
     $imgsize = $atts['imgsize'];
-    $imgclass = $atts['imgclass'];
     $showicons = $atts['icons'];
     $mini = $atts['mini'];
 

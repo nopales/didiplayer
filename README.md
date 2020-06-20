@@ -1,7 +1,8 @@
 # didiplayer
+Current version is 2.3
 Wordpress Plugin for Chronicles of Didi audio/podcast player.
 
-Shortcode defaults are set for my current implementation but could be customized and used with another xml feed for another site. 
+Shortcode defaults are set for my current implementation but could be customized and used with another xml feed for another site.
 
 Full player (https://chroniclesofdidi.com/podcast-stories/)
 

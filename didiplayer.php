@@ -3,7 +3,7 @@
  * Plugin Name: didiplayer
  * Plugin URI: https://chroniclesofdidi.com
  * Description: Display content using a shortcode to insert in a page or post
- * Version: 2.3
+ * Version: 2.4
  * Text Domain: didiplayer
  * Author: Mraowr
  * Author URI: https://chroniclesofdidi.com

@@ -23,7 +23,8 @@
 			'google' => '',
 			'soundcloud' => '',
 			'icons' => 'true' ,
-			'mini' => 'n'
+			'mini' => 'n',
+      'overcast' => 'https://overcast.fm/itunes1518437334/the-chronicles-of-didi'
 		), $atts, 'podcastfeed' );
 
     $feedurl = $atts['feedurl'];
@@ -34,7 +35,7 @@
     $imgsize = $atts['imgsize'];
     $showicons = $atts['icons'];
     $mini = $atts['mini'];
-
+    $overcast = $atts ['overcast'];
 
 
     $xml=simplexml_load_file($feedurl, SimpleXMLIterator) or die("Error: Cannot create object, double check your feed url");
@@ -61,7 +62,7 @@
 
         #Channel Title
         # $Content .= '<p class="dp_cht">' . $xml->channel->title . '</p>';
-$Content .='<p>Listen on: <button class="dp_rss_button" onclick="window.location.href="' . $itunes . '">Apple Podcasts</button></p>';
+$Content .='<p>Listen on: <button class="dp_rss_button" onclick="window.location.href="' . $itunes . '">Apple Podcasts</button><button class="dp_rss_button" onclick="window.location.href="' . $overcast . '">Apple Podcasts</button></p>';
 
         $Content .= '<div class="dp_player_full">';
             #Loop starts here

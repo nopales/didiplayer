@@ -62,7 +62,7 @@
 
         #Channel Title
         # $Content .= '<p class="dp_cht">' . $xml->channel->title . '</p>';
-$Content .='<p>Listen on: <button class="dp_rss_button" onclick="window.location.href="' . $itunes . '">Apple Podcasts</button><button class="dp_rss_button" onclick="window.location.href="' . $overcast . '">Apple Podcasts</button></p>';
+$Content .='<p>Listen on: <button class="dp_rss_button" onclick="window.location.href="' . $itunes . '">Apple Podcasts</button> <button class="dp_rss_button" onclick="window.location.href="' . $overcast . '">Apple Podcasts</button></p>';
 
         $Content .= '<div class="dp_player_full">';
             #Loop starts here

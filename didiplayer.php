@@ -62,7 +62,7 @@
 
         #Channel Title
         # $Content .= '<p class="dp_cht">' . $xml->channel->title . '</p>';
-$Content .='<p>Listen on: <button class="dp_rss_button" onclick="window.location.href="' . $itunes . '">Apple Podcasts</button> <button class="dp_rss_button" onclick="window.location.href="' . $overcast . '">Overcast</button></p>';
+$Content .='<p>Listen on: <a href="' . $itunes . '" target="_parent"><button class="dp_rss_button">Apple Podcasts</button></a> <a href="' . $overcast . '" target="_parent"><button class="dp_rss_button">Overcast</button></a></p>';
 
         $Content .= '<div class="dp_player_full">';
             #Loop starts here
@@ -93,7 +93,7 @@ $Content .='<p>Listen on: <button class="dp_rss_button" onclick="window.location
 $Content .= '</div>';
 
 $Content .= '<div>Above are our most recent episodes. For continuous playback
-or older episodes, subscribe via one of these fine platforms: <button class="dp_rss_button" onclick="window.location.href="' . $itunes . '">Apple Podcasts</button> <button class="dp_rss_button" onclick="window.location.href="' . $overcast . '">Overcast</button>';
+or older episodes, subscribe via one of these fine platforms: <a href="' . $itunes . '" target="_parent"><button class="dp_rss_button">Apple Podcasts</button></a> <a href="' . $overcast . '" target="_parent"><button class="dp_rss_button">Overcast</button></a>';
 
 
 #button to copy RSS

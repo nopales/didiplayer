@@ -93,7 +93,7 @@ $Content .='<p>Listen on: <button class="dp_rss_button" onclick="window.location
 $Content .= '</div>';
 
 $Content .= '<div>Above are our most recent episodes. For continuous playback
-or older episodes, subscribe via one of these fine platforms: <button class="dp_rss_button" onclick="window.location.href="' . $itunes . '">Apple Podcasts</button>';
+or older episodes, subscribe via one of these fine platforms: <button class="dp_rss_button" onclick="window.location.href="' . $itunes . '">Apple Podcasts</button> <button class="dp_rss_button" onclick="window.location.href="' . $overcast . '">Overcast</button>';
 
 
 #button to copy RSS

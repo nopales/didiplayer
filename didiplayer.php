@@ -47,15 +47,15 @@
     $Content .='<div class=dp_mini_player>';
         $Content .= '<p class="dp_mini_title">' . 'Episode ';
                     $Content .= $xml->channel->item->children('itunes', true)->episode . ': ';
-                $Content .= $xml->channel->item->title . '</p>';
-
+                    $Content .= $xml->channel->item->title . '</p>';
         #wordpress player
         $Content .= '<div class="dp_wp_player">';
             $Content .= '<p class="dp_wp_player">';
-	            $attr = array( 'src' => $xml->channel->item->enclosure['url'], 'loop' => '', 'autoplay' => '', 'preload' => 'none' );
-	            $Content .= wp_audio_shortcode( $attr );
+	             $attr = array( 'src' => $xml->channel->item->enclosure['url'], 'loop' => '', 'autoplay' => '', 'preload' => 'none' );
+	             $Content .= wp_audio_shortcode( $attr );
             $Content .='</p>';
         $Content .= '</div>';
+            $Content .='<p>Listen on: <a href="' . $itunes . '" target="_parent"><button class="dp_rss_button">Apple Podcasts</button></a> <a href="' . $overcast . '" target="_parent"><button class="dp_rss_button">Overcast</button></a></p>';
     $Content .='</div>';
         break;
    default:

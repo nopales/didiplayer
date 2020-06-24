@@ -13,3 +13,4 @@ Mini Player (https://chroniclesofdidi.com/)
 [didiplayer feedurl="feed url goes here" mini="y" itunes="url for apple podcasts" overcast="url for overcast"]
 
 Thanks for reading me.
+Thanks to git and github for existing.

@@ -99,12 +99,12 @@ or older episodes, subscribe via one of these fine platforms: <a href="' . $itun
 #button to copy RSS
 $Content .='<input type="text" value="';
 $Content .=$feedurl;
-$Content .='" id="myInput" style="display:none">
-<button class="dp_rss_button" onclick="myFunction()">Copy feed url to clipboard</button>
+$Content .='" id="chroniclesURL" style="display:none">
+<button class="dp_rss_button" onclick="copyURL()">Copy feed url to clipboard</button>
 
 <script>
-function myFunction() {
-  var copyText = document.getElementById("myInput");
+function copyURL() {
+  var copyText = document.getElementById("chroniclesURL");
   copyText.select();
   copyText.setSelectionRange(0, 99999)
   document.execCommand("copy");

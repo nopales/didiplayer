@@ -24,7 +24,8 @@
 			'soundcloud' => '',
 			'icons' => 'true' ,
 			'mini' => 'n',
-      'overcast' => 'https://overcast.fm/itunes1518437334/the-chronicles-of-didi'
+      'overcast' => 'https://overcast.fm/itunes1518437334/the-chronicles-of-didi',
+      'spotify' => 'https://open.spotify.com/show/3IgZvp1Cc6dMrzl6bdn2fh'
 		), $atts, 'podcastfeed' );
 
     $feedurl = $atts['feedurl'];
@@ -36,6 +37,7 @@
     $showicons = $atts['icons'];
     $mini = $atts['mini'];
     $overcast = $atts ['overcast'];
+    $spotify = $atts ['spotify'];
 
 
     $xml=simplexml_load_file($feedurl, SimpleXMLIterator) or die("Error: Cannot create object, double check your feed url");
@@ -55,14 +57,16 @@
 	             $Content .= wp_audio_shortcode( $attr );
             $Content .='</p>';
         $Content .= '</div>';
-            $Content .='<p>Listen on: <a href="' . $itunes . '" target="_parent"><button class="dp_rss_button">Apple Podcasts</button></a> <a href="' . $overcast . '" target="_parent"><button class="dp_rss_button">Overcast</button></a></p>';
+            $Content .='<p>Listen on: <a href="' . $itunes . '" target="_parent"><button class="dp_rss_button">Apple Podcasts</button></a> <a href="' . $overcast . '" target="_parent"><button class="dp_rss_button">Overcast</button></a>
+            <a href="' . $spotify . '" target="_parent"><button class="dp_rss_button">Spotify</button></a></p>';
     $Content .='</div>';
         break;
    default:
 
         #Channel Title
         # $Content .= '<p class="dp_cht">' . $xml->channel->title . '</p>';
-$Content .='<p>Listen on: <a href="' . $itunes . '" target="_parent"><button class="dp_rss_button">Apple Podcasts</button></a> <a href="' . $overcast . '" target="_parent"><button class="dp_rss_button">Overcast</button></a></p>';
+$Content .='<p>Listen on: <a href="' . $itunes . '" target="_parent"><button class="dp_rss_button">Apple Podcasts</button></a> <a href="' . $overcast . '" target="_parent"><button class="dp_rss_button">Overcast</button></a>
+<a href="' . $spotify . '" target="_parent"><button class="dp_rss_button">Spotify</button></a></p>';
 
         $Content .= '<div class="dp_player_full">';
             #Loop starts here
